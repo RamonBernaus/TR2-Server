@@ -1,0 +1,35 @@
+{
+    "preguntes": [
+      {
+        "id": 1,
+        "enunciat": "¿Cuál es la capital de Francia?",
+        "respostes": [
+          {"id": 1, "opcio": "Roma"},
+          {"id": 2, "opcio": "París"},
+          {"id": 3, "opcio": "Londres"},
+          {"id": 4, "opcio": "Berlín"}
+        ]
+      },
+      {
+        "id": 2,
+        "enunciat": "¿Cuál es el río más largo del mundo?",
+        "respostes": [
+          {"id": 1, "opcio": "Nilo"},
+          {"id": 2, "opcio": "Amazonas"},
+          {"id": 3, "opcio": "Misisipi"},
+          {"id": 4, "opcio": "Yangtsé"}
+        ]
+      },
+      {
+        "id": 3,
+        "enunciat": "¿Cuál es el planeta más grande del sistema solar?",
+        "respostes": [
+          {"id": 1, "opcio": "Tierra"},
+          {"id": 2, "opcio": "Júpiter"},
+          {"id": 3, "opcio": "Marte"},
+          {"id": 4, "opcio": "Venus"}
+        ]
+      }
+    ]
+  }
+  

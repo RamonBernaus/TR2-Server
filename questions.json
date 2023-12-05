@@ -1,35 +1,180 @@
 {
-    "preguntes": [
-      {
-        "id": 1,
-        "enunciat": "¿Cuál es la capital de Francia?",
-        "respostes": [
-          {"id": 1, "opcio": "Roma"},
-          {"id": 2, "opcio": "París"},
-          {"id": 3, "opcio": "Londres"},
-          {"id": 4, "opcio": "Berlín"}
-        ]
-      },
-      {
-        "id": 2,
-        "enunciat": "¿Cuál es el río más largo del mundo?",
-        "respostes": [
-          {"id": 1, "opcio": "Nilo"},
-          {"id": 2, "opcio": "Amazonas"},
-          {"id": 3, "opcio": "Misisipi"},
-          {"id": 4, "opcio": "Yangtsé"}
-        ]
-      },
-      {
-        "id": 3,
-        "enunciat": "¿Cuál es el planeta más grande del sistema solar?",
-        "respostes": [
-          {"id": 1, "opcio": "Tierra"},
-          {"id": 2, "opcio": "Júpiter"},
-          {"id": 3, "opcio": "Marte"},
-          {"id": 4, "opcio": "Venus"}
-        ]
-      }
-    ]
-  }
-  
+  "preguntes": [
+    {
+      "id": 1,
+      "enunciat": "¿Cuánto es 8 multiplicado por 7?",
+      "respostes": [
+        {
+          "id": 1,
+          "opcio": "56"
+        },
+        {
+          "id": 2,
+          "opcio": "64"
+        },
+        {
+          "id": 3,
+          "opcio": "49"
+        },
+        {
+          "id": 4,
+          "opcio": "42"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "enunciat": "¿Cuál es la raíz cuadrada de 144?",
+      "respostes": [
+        {
+          "id": 1,
+          "opcio": "12"
+        },
+        {
+          "id": 2,
+          "opcio": "10"
+        },
+        {
+          "id": 3,
+          "opcio": "16"
+        },
+        {
+          "id": 4,
+          "opcio": "8"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "enunciat": "Si un triángulo tiene ángulos de 30, 60 y 90 grados, ¿cuánto mide el ángulo de 60 grados?",
+      "respostes": [
+        {
+          "id": 1,
+          "opcio": "30 grados"
+        },
+        {
+          "id": 2,
+          "opcio": "45 grados"
+        },
+        {
+          "id": 3,
+          "opcio": "60 grados"
+        },
+        {
+          "id": 4,
+          "opcio": "90 grados"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "enunciat": "¿Cuál es el resultado de la suma 237 + 489?",
+      "respostes": [
+        {
+          "id": 1,
+          "opcio": "716"
+        },
+        {
+          "id": 2,
+          "opcio": "726"
+        },
+        {
+          "id": 3,
+          "opcio": "646"
+        },
+        {
+          "id": 4,
+          "opcio": "536"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "enunciat": "Si un rectángulo tiene un largo de 12 unidades y un ancho de 8 unidades, ¿cuál es su área?",
+      "respostes": [
+        {
+          "id": 1,
+          "opcio": "80 unidades cuadradas"
+        },
+        {
+          "id": 2,
+          "opcio": "96 unidades cuadradas"
+        },
+        {
+          "id": 3,
+          "opcio": "104 unidades cuadradas"
+        },
+        {
+          "id": 4,
+          "opcio": "64 unidades cuadradas"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "enunciat": "¿Cuánto es 15 dividido por 3?",
+      "respostes": [
+        {
+          "id": 1,
+          "opcio": "5"
+        },
+        {
+          "id": 2,
+          "opcio": "4"
+        },
+        {
+          "id": 3,
+          "opcio": "3"
+        },
+        {
+          "id": 4,
+          "opcio": "2"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "enunciat": "¿Cuál es el resultado de 3 al cubo (3^3)?",
+      "respostes": [
+        {
+          "id": 1,
+          "opcio": "27"
+        },
+        {
+          "id": 2,
+          "opcio": "81"
+        },
+        {
+          "id": 3,
+          "opcio": "64"
+        },
+        {
+          "id": 4,
+          "opcio": "18"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "enunciat": "Si un círculo tiene un radio de 5 unidades, ¿cuál es su circunferencia?",
+      "respostes": [
+        {
+          "id": 1,
+          "opcio": "10π unidades"
+        },
+        {
+          "id": 2,
+          "opcio": "15π unidades"
+        },
+        {
+          "id": 3,
+          "opcio": "20π unidades"
+        },
+        {
+          "id": 4,
+          "opcio": "25π unidades"
+        }
+      ]
+    }
+  ]
+}

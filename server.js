@@ -1,5 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
+const { MongoClient } = require('mongodb');
 
 const app = express();
 const PORT = 3000;
@@ -7,11 +8,18 @@ const fs = require('fs');
 const path = require('path');
 
 
+
+
 const dbConfig = {
   host: 'dam.inspedralbes.cat',
   user: 'a21adahidsan_userTR2',
   password: 'Paco1234',
   database: 'a21adahidsan_TR2',
+};
+
+const mongoConfig = {
+  url: 'mongodb://localhost:27017', // Cambia esto según la configuración de tu servidor MongoDB
+  dbName: 'questions',
 };
 
 const connection = mysql.createConnection(dbConfig);
@@ -46,7 +54,7 @@ app.get('/api/ValidateLogin', (req, res) => {
 });
 
 // Ruta per obtenir les preguntes
-app.get('/api/getQuestions', (req, res) => {
+/*app.get('/api/getQuestions', (req, res) => {
   const filePath = path.join(__dirname, 'questions.json');
   fs.readFile(filePath, 'utf8', (err, data) => {
     try {
@@ -61,6 +69,32 @@ app.get('/api/getQuestions', (req, res) => {
       console.error('Error al analizar el JSON:', error);
       res.status(500).send('Error al analizar el JSON');
     }
+  });
+}); */
+
+app.get('/api/getQuestions', (req, res) => {
+  const client = new MongoClient(mongoConfig.url);
+
+  client.connect((err) => {
+    if (err) {
+      console.error('Error de conexión a MongoDB:', err);
+      res.status(500).send('Error de conexión a MongoDB');
+      return;
+    }
+
+    const db = client.db(mongoConfig.dbName);
+    const collection = db.collection('questions');
+
+    collection.find({}).toArray((err, questions) => {
+      if (err) {
+        console.error('Error al obtener preguntas de MongoDB:', err);
+        res.status(500).send('Error al obtener preguntas de MongoDB');
+      } else {
+        res.json(questions);
+      }
+
+      client.close();
+    });
   });
 });
 
